@@ -5,7 +5,7 @@ second_digit = int(input('Input second digit '))
 def compare_digit(b, c):
     a = 5
     d = b + c
-    f = b - c
+    f = abs(b - c)
 
     if c == b:
         return True
