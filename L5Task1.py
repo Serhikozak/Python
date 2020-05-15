@@ -1,7 +1,7 @@
 # file which create copy to new file
 import random
 import shutil
-from hashlib import new
+
 
 my_list = [random.randint(2, 8) for i in range(1, 9)]
 number_inner_list = random.choice(my_list)
