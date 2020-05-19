@@ -1,6 +1,6 @@
 # file which create copy to new file
 import random
-import shutil
+# import shutil
 
 # Create random quantity of number inner list and quantity of list
 my_list = [random.randint(2, 8) for i in range(1, 9)]
@@ -21,8 +21,12 @@ print(new_list)
 
 
 # Copy existing file to another file which is called script.copy.py
-shutil.copy(r'L5Task1.py', r'script.copy.py')
+with open("L5Task1.py", "r") as input, open("script.copy.py", "w") as output:
+    output.write(input.read())  # скопировали содержимое input в output
+# shutil.copy(r'L5Task1.py', r'script.copy.py')
 # file.close()
+
+
 
 
 
