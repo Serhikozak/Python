@@ -15,12 +15,12 @@ def deco(func):
 def start(a, b):
     c = a + b
     print(c, end=' ')
+    return c
 
 
-target_result = start(20, 60)
-
+f = start(45, 85)
 
 current_date = date.today()
 current_time = datetime.now().time()
 with open("logs.txt", "a") as file:
-    file.write(f'\n{current_date} {current_time} : {result}')
+    file.write(f'\n{current_date} {current_time} : {f}')
