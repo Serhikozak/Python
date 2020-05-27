@@ -2,8 +2,8 @@ from tkinter import *
 
 
 def copy_values():
-    return txt_name.get()
-    return txt_surname.get()
+    with open("getval.txt", "a") as tr:
+        tr.write(f'\n{txt_name.get()} {txt_surname.get()}')
 
 
 window_1 = Tk()
@@ -26,7 +26,7 @@ btn = Button(window_1,
              )
 btn.grid(column=0, row=4)
 
-copy_values()
+
 with open("getval.txt", "a") as file:
     file.write(str(copy_values()))
 
