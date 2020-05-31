@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tkinter import *
 from datetime import date, datetime
 
@@ -13,6 +14,8 @@ def create_window():
     def clear_values():
         clearval = open("/home/vagrant/TaskPython/Python/getval.txt", "w")
         clearval.close()
+        window.destroy()
+
 
     window = Toplevel(root)
     lbox = Listbox(window, width=60)
