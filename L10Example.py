@@ -19,18 +19,22 @@ def copy_reference():
         if not pf:
             with open(f'{name}', 'wb') as file:
                 file.write(r.content)
+                file.close()
         if pf == pf:
             with open(f'{pf}/{name}', 'wb') as file:
                 file.write(r.content)
+                file.close()
     elif nf == nf:
         if not pf:
             with open(f'{nf}', 'wb') as file:
                 file.write(r.content)
+                file.close()
         if pf == pf:
             with open(f'{pf}/{nf}', 'wb') as file:
                 file.write(r.content)
+                file.close()
 
-    
+
 root = Tk()
 
 # Добавляем название окна(програмы)
