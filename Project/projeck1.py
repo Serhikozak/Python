@@ -41,10 +41,19 @@ class Mainwindow:
     def press_backspace(self, event):
         global count
         count = count + 1
-        return Label(text=f'Backspace was clicked {count} times!!!', font=('Arial', 14, 'bold')).grid(column=0, row=12)
+        return Label(text=f'Backspace was clicked {count} times', font=('Arial', 14, 'bold')).grid(column=0, row=12)
 
     def stop_countdown(self, event):
         root.after_cancel(after_id)
+
+
+# class Start(Mainwindow):
+#
+#     def compare(self):
+#         self.line_label()
+#         txt = self.enter_str.get()
+#         try:
+#             if txt
 
 
 root = Tk()
